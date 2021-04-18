@@ -24,8 +24,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     # 如果写了测试用例,也可以自动测试
-    - run: yarn install
-    - run: yarn build
+    - run: npm install
+    - run: npm run build
     - name: Deploy
       # 使用此action，也可在官方市场选择其他action
       uses: easingthemes/ssh-deploy@v2.1.6
