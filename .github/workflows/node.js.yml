@@ -32,6 +32,8 @@ jobs:
       env:
         # Private Key secrets.ALIYUN就是刚才配置的密钥名
         SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
+        # scp参数
+        ARGS: "-avzr --delete"
         # For any initial/required rsync flags
         # Source directory dist/ 需要到远端服务器的文件目录 **填入自己的打包路径**
         SOURCE: "dist"
