@@ -39,6 +39,6 @@ jobs:
         # Remote host **填入自己的域名**
         REMOTE_HOST: "39.99.202.177"
         # Remote user **填入自己的用户,一般都是root用户**
-        REMOTE_USER: "really"
+        REMOTE_USER: "root"
         # Target directory 此处填写的是我博客域名下的action pacth下 **填入自己的域名路径**
         TARGET: "/root/web/really"
