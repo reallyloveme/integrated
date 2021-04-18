@@ -26,8 +26,6 @@ jobs:
     # 如果写了测试用例,也可以自动测试
     - run: yarn install
     - run: yarn build
-      env:
-        CI: true
     - name: Deploy
       # 使用此action，也可在官方市场选择其他action
       uses: easingthemes/ssh-deploy@v2.0.7
